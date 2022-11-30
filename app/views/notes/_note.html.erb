@@ -1,0 +1,11 @@
+<p>
+  <strong>Note:</strong>
+  <%= note.note %>
+</p>
+
+<p>
+  <%= link_to "Destroy Note", [note.article, note], data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure?"
+              } %>
+</p>

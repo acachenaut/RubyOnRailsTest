@@ -1,0 +1,10 @@
+<%= form_with model: [ @article, @article.notes.build ] do |form| %>
+  <p>
+    <%= form.label :note %><br>
+    <%= form.select :note, [1, 2, 3, 4, 5], selected: 5 %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
