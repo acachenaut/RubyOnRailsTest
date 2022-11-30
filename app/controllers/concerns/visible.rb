@@ -13,19 +13,6 @@ module Visible
     end
   end
 
-  class_methods do
-    def noteAvg(art)
-      sum = 0.0
-      art.notes.each do |note|
-        sum += note.note
-      end
-      if (art.notes.count == 0)
-        then return 0
-        else return sum/art.notes.count
-      end
-    end
-  end
-
   def archived?
     status == 'archived'
   end
